@@ -17,7 +17,9 @@
     "start": "set PORT=8080 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,5 +36,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage" : "http://amahlawat.github.io/react-redux-basics"
+  "homepage": "http://amahlawat.github.io/react-redux-basics",
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
+  }
 }
